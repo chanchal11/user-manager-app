@@ -41,7 +41,7 @@ const UserTable: React.FC = () => {
               <TableCell>
                 <Autocomplete
                   value={user.location}
-                  onChange={(event, newValue) => {
+                  onChange={(_, newValue) => {
                     if (typeof newValue === 'string') {
                       handleLocationChange(user.id, newValue);
                     } else if (newValue && newValue.inputValue) {
